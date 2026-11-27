@@ -54,6 +54,7 @@ data class Cand(val rank: Int, val code: String, val name: String, val score: Do
 data class Strat(val id: String, val name: String)
 data class Report(val id: String, val title: String, val time: String)
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun App() {
     val ctx = LocalContext.current
